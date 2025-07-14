@@ -7,4 +7,7 @@ sources:
     tables:
       - name: orders
       - name: customer
+      - name: product
+      - name: order_line
+      - name: order_status
     
