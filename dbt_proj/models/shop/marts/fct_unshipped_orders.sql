@@ -7,6 +7,7 @@ customer_id,
 customer_name,
 status_name,
 city,
+order_id,
 order_date
 from inter_customer_orders
 where status_name = 'Unshipped')

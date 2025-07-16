@@ -12,6 +12,8 @@ joined_data as (
     c.customer_id,
     c.customer_name,
     c.city,
+    c.email,
+    c.address_line_1,
     o.order_date,
     o.total_amount,
     o.order_id,
