@@ -1,7 +1,13 @@
+with inter_orders_product as ( 
+    select * from {{ ref('inter_orders_product') }}
+), 
+joined_data as (
 select
 product_id,
 product_name,
-price_margin
-from {{ ref('inter_orders_product') }}
+profit_margin
+from inter_orders_product
 group by product_id, product_name, profit_margin
-order by price_margin desc
+order by profit_margin desc)
+
+select * from joined_data
